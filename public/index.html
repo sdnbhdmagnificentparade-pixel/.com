@@ -1,45 +1,92 @@
 <!doctype html>
-<html lang="en">
+<html lang="ms">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="DANAGO Pay makes secure digital payments simple." />
-    <title>DANAGO Pay</title>
+    <meta name="description" content="DanaGo menawarkan pinjaman peribadi pantas dan telus di Malaysia." />
+    <title>DanaGo | Pinjaman pantas, terma ringkas</title>
+    <style>
+      @media (max-width: 760px) {
+        .desktop-only { display: none !important; }
+        .hero { grid-template-columns: 1fr !important; padding-top: 70px !important; }
+        .hero-copy { max-width: none !important; }
+        .hero-card { margin-top: 4px !important; }
+        .stats { grid-template-columns: repeat(2, 1fr) !important; }
+        .steps { grid-template-columns: 1fr !important; }
+        .benefits { grid-template-columns: 1fr !important; }
+        .callout { grid-template-columns: 1fr !important; }
+        .footer-grid { grid-template-columns: 1fr 1fr !important; }
+        .nav-apply { padding: 13px 15px !important; font-size: 12px !important; white-space: nowrap; }
+      }
+    </style>
   </head>
-  <body style="margin: 0; background: #f4f7f6; color: #102a2e; font-family: Arial, Helvetica, sans-serif;">
-    <main style="min-height: 100vh; display: flex; flex-direction: column;">
-      <header style="width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 28px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-        <a href="/" style="color: #102a2e; font-size: 20px; font-weight: 800; letter-spacing: -0.04em; text-decoration: none;">DANAGO <span style="color: #087f6b;">Pay</span></a>
-        <span style="padding: 8px 12px; border: 1px solid #b8ccc7; border-radius: 999px; color: #315c55; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">Secure by design</span>
-      </header>
+  <body style="margin:0; background:#fffaf7; color:#111827; font-family:'Plus Jakarta Sans',Arial,sans-serif;">
+    <header style="position:sticky; top:0; z-index:10; background:rgba(255,250,247,.94); border-bottom:1px solid #f3e8e0; backdrop-filter:blur(14px);">
+      <div style="width:min(1160px,calc(100% - 40px)); min-height:76px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:22px;">
+        <a href="#utama" aria-label="DanaGo home" style="display:flex; align-items:center; gap:10px; color:#182235; font-size:21px; font-weight:800; letter-spacing:-.04em; text-decoration:none;">
+          <span style="width:36px; height:36px; display:grid; place-items:center; border-radius:10px; background:#20293a; color:#ffba40; font-size:20px; letter-spacing:-7px; padding-right:7px; box-sizing:border-box;">››</span>
+          Dana<span style="color:#ee3731;">Go</span>
+        </a>
+        <nav style="display:flex; align-items:center; gap:10px;">
+          <a class="desktop-only" href="#faq" style="padding:13px 22px; border:1px solid #dac5b3; border-radius:14px; color:#172034; font-size:14px; font-weight:700; text-decoration:none;">Log Masuk</a>
+          <a class="nav-apply" href="#mohon" style="padding:14px 21px; border-radius:14px; background:#ed3831; box-shadow:0 9px 18px rgba(237,56,49,.20); color:#fff; font-size:14px; font-weight:800; text-decoration:none;">Mohon Sekarang&nbsp; →</a>
+          <button aria-label="Menu" style="width:43px; height:43px; border:1px solid #dac5b3; border-radius:14px; background:transparent; color:#172034; font-size:22px; line-height:1;">☰</button>
+        </nav>
+      </div>
+    </header>
 
-      <section style="width: min(1120px, calc(100% - 40px)); margin: auto; padding: 72px 0 96px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: center; gap: 64px;">
-        <div>
-          <p style="margin: 0 0 20px; color: #087f6b; font-size: 13px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;">Payments that keep pace</p>
-          <h1 style="max-width: 680px; margin: 0; font-size: clamp(48px, 8vw, 92px); line-height: 0.95; letter-spacing: -0.065em;">Move money.<br />Move forward.</h1>
-          <p style="max-width: 560px; margin: 32px 0 0; color: #48645f; font-size: 18px; line-height: 1.7;">A straightforward way to send, receive, and manage digital payments with confidence. Built for everyday momentum.</p>
+    <main id="utama">
+      <section class="hero" style="width:min(1160px,calc(100% - 40px)); margin:0 auto; padding:92px 0 72px; display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:68px;">
+        <div class="hero-copy" style="max-width:620px;">
+          <p style="display:inline-flex; align-items:center; gap:8px; margin:0 0 22px; padding:8px 13px; border-radius:999px; background:#fff0ee; color:#e53b33; font-size:12px; font-weight:800; letter-spacing:.04em; text-transform:uppercase;"><span style="width:6px; height:6px; border-radius:50%; background:#ed3831;"></span>Kredit pintar, terma ringkas</p>
+          <h1 style="margin:0; font-size:clamp(46px,5.8vw,76px); line-height:.99; letter-spacing:-.065em;">Dapatkan tunai <span style="color:#ed3831; text-decoration:underline; text-decoration-color:#ffe5a3; text-decoration-thickness:8px; text-underline-offset:-1px;">dalam minit,</span> bukan minggu</h1>
+          <p style="max-width:550px; margin:27px 0 31px; color:#475569; font-size:17px; line-height:1.65;">Kelulusan 5 minit, tiada caj tersembunyi. Tunai dalam akaun anda hari ini.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:12px;">
+            <a href="#mohon" style="padding:17px 24px; border-radius:14px; background:#ed3831; box-shadow:0 10px 20px rgba(237,56,49,.20); color:#fff; font-size:15px; font-weight:800; text-decoration:none;">Mohon Sekarang&nbsp; →</a>
+            <a href="#cara-kerja" style="padding:16px 24px; border:2px solid #dbc8b8; border-radius:14px; color:#172034; font-size:15px; font-weight:800; text-decoration:none;">Lihat cara kerja</a>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:18px 26px; margin-top:33px; padding-top:20px; border-top:1px dashed #dfc9b9; color:#293448; font-size:13px; font-weight:700;">
+            <span>●&nbsp; Pemberi pinjaman berlesen BNM</span><span>ϟ&nbsp; Kelulusan 5 minit</span><span>⌁&nbsp; Keselamatan gred bank</span>
+          </div>
         </div>
-
-        <aside style="background: #102a2e; border-radius: 28px; padding: clamp(28px, 5vw, 48px); color: #ffffff; box-shadow: 0 24px 64px rgba(16, 42, 46, 0.16);">
-          <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
-            <span style="font-size: 14px; color: #b9d3ce;">Available balance</span>
-            <span style="width: 11px; height: 11px; border-radius: 50%; background: #39c6a8;"></span>
+        <div class="hero-card" style="padding:24px; border-radius:28px; background:#20293a; box-shadow:0 26px 54px rgba(26,34,52,.17); color:#fff;">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; color:#cbd5e1; font-size:13px;"><span style="display:flex; align-items:center; gap:7px; color:#8ce1bb; font-weight:800;">● Approved</span><span>#DG-2026-0001</span></div>
+          <div style="margin:38px 0 8px; color:#aeb8c7; font-size:14px;">Jumlah pinjaman</div>
+          <div style="font-size:clamp(48px,6vw,68px); font-weight:800; line-height:1; letter-spacing:-.06em;"><small style="font-size:22px; vertical-align:top; letter-spacing:0;">RM</small> 3,000</div>
+          <p style="margin:14px 0 25px; color:#cbd5e1; font-size:14px;">Diluluskan dan sedia untuk disalurkan</p>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+            <div style="padding:14px; border:1px solid #3c4658; border-radius:12px;"><span style="display:block; color:#aeb8c7; font-size:11px;">Ke akaun</span><strong style="display:block; margin-top:6px; font-size:14px;">•••• 4567</strong></div>
+            <div style="padding:14px; border:1px solid #3c4658; border-radius:12px;"><span style="display:block; color:#aeb8c7; font-size:11px;">Dana tiba</span><strong style="display:block; margin-top:6px; font-size:14px;">6 jam</strong></div>
+            <div style="padding:14px; border:1px solid #3c4658; border-radius:12px;"><span style="display:block; color:#aeb8c7; font-size:11px;">Masa kelulusan</span><strong style="display:block; margin-top:6px; font-size:14px;">12 min</strong></div>
+            <div style="padding:14px; border:1px solid #3c4658; border-radius:12px;"><span style="display:block; color:#aeb8c7; font-size:11px;">Sokongan</span><strong style="display:block; margin-top:6px; font-size:14px;">WhatsApp 24/7</strong></div>
           </div>
-          <p style="margin: 28px 0 48px; font-size: clamp(42px, 6vw, 64px); font-weight: 700; letter-spacing: -0.05em;">$24,860<span style="color: #79a29a;">.00</span></p>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-            <div style="padding: 18px; border: 1px solid #355156; border-radius: 16px;">
-              <div style="color: #b9d3ce; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;">Sent</div>
-              <strong style="display: block; margin-top: 10px; font-size: 20px;">$3,240</strong>
-            </div>
-            <div style="padding: 18px; border: 1px solid #355156; border-radius: 16px;">
-              <div style="color: #b9d3ce; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;">Received</div>
-              <strong style="display: block; margin-top: 10px; font-size: 20px; color: #6ee1c8;">$8,920</strong>
-            </div>
-          </div>
-        </aside>
+          <div style="margin-top:19px; padding:12px 14px; border-radius:10px; background:#2d394d; color:#95e5c0; font-size:12px; font-weight:700;">ϟ Pengeluaran hari sama, berlesen BNM</div>
+        </div>
       </section>
 
-      <footer style="width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 24px 0 32px; border-top: 1px solid #d6e1df; color: #617a75; font-size: 13px;">Fast. Clear. Ready when you are.</footer>
+      <section class="stats" style="display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:#f0ded2; border-top:1px solid #f0ded2; border-bottom:1px solid #f0ded2;">
+        <div style="padding:27px 20px; background:#fff6f1; text-align:center;"><strong style="display:block; color:#ed3831; font-size:25px;">RM 2M+</strong><span style="color:#64748b; font-size:12px;">Pinjaman dikeluarkan</span></div>
+        <div style="padding:27px 20px; background:#fff6f1; text-align:center;"><strong style="display:block; color:#ed3831; font-size:25px;">20K+</strong><span style="color:#64748b; font-size:12px;">Pelanggan dilayan</span></div>
+        <div style="padding:27px 20px; background:#fff6f1; text-align:center;"><strong style="display:block; color:#ed3831; font-size:25px;">12 min</strong><span style="color:#64748b; font-size:12px;">Purata kelulusan</span></div>
+        <div style="padding:27px 20px; background:#fff6f1; text-align:center;"><strong style="display:block; color:#ed3831; font-size:25px;">4.9 / 5</strong><span style="color:#64748b; font-size:12px;">Penilaian pelanggan</span></div>
+      </section>
+
+      <section id="cara-kerja" style="width:min(1160px,calc(100% - 40px)); margin:0 auto; padding:100px 0;">
+        <div style="max-width:560px; margin-bottom:42px;"><p style="margin:0 0 12px; color:#ed3831; font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase;">Cara kerja</p><h2 style="margin:0; font-size:clamp(32px,4.5vw,52px); letter-spacing:-.055em;">Tiga langkah ke tunai anda</h2><p style="margin:14px 0 0; color:#64748b; line-height:1.6;">Direka pantas, ringkas dan telus.</p></div>
+        <div class="steps" style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px;">
+          <article style="padding:27px; border:1px solid #f0ddd1; border-radius:18px; background:#fff;"><div style="display:flex; justify-content:space-between; color:#ed3831; font-size:23px; font-weight:800;"><span>01</span><span>✎</span></div><h3 style="margin:50px 0 10px; font-size:20px;">Mohon dalam talian</h3><p style="margin:0; color:#64748b; font-size:14px; line-height:1.65;">Isi borang dalam masa 2 minit. Telefon + IC sahaja diperlukan.</p></article>
+          <article style="padding:27px; border:1px solid #f0ddd1; border-radius:18px; background:#fff;"><div style="display:flex; justify-content:space-between; color:#ed3831; font-size:23px; font-weight:800;"><span>02</span><span>✓</span></div><h3 style="margin:50px 0 10px; font-size:20px;">Kelulusan pantas</h3><p style="margin:0; color:#64748b; font-size:14px; line-height:1.65;">Pasukan kami semak dan luluskan dalam masa beberapa minit.</p></article>
+          <article style="padding:27px; border:1px solid #f0ddd1; border-radius:18px; background:#fff;"><div style="display:flex; justify-content:space-between; color:#ed3831; font-size:23px; font-weight:800;"><span>03</span><span>▣</span></div><h3 style="margin:50px 0 10px; font-size:20px;">Terima dana</h3><p style="margin:0; color:#64748b; font-size:14px; line-height:1.65;">Tunai dihantar terus ke akaun bank anda, biasanya pada hari sama.</p></article>
+        </div>
+      </section>
+
+      <section style="background:#20293a; color:#fff;"><div style="width:min(1160px,calc(100% - 40px)); margin:0 auto; padding:88px 0;"><p style="margin:0 0 12px; color:#ff837b; font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase;">Mengapa DanaGo</p><h2 style="max-width:690px; margin:0; font-size:clamp(31px,4.4vw,50px); letter-spacing:-.055em;">Dibina untuk rakyat Malaysia yang perlukan tunai pantas</h2><div class="benefits" style="display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:42px;"><div style="padding:20px; border:1px solid #3e495c; border-radius:14px;"><span style="color:#ff837b; font-size:22px;">↗</span><h3 style="margin:24px 0 8px; font-size:16px;">Sangat pantas</h3><p style="margin:0; color:#b8c2d1; font-size:13px; line-height:1.6;">Mohon, luluskan dan terima dalam masa kurang sejam.</p></div><div style="padding:20px; border:1px solid #3e495c; border-radius:14px;"><span style="color:#ff837b; font-size:22px;">◈</span><h3 style="margin:24px 0 8px; font-size:16px;">Sepenuhnya selamat</h3><p style="margin:0; color:#b8c2d1; font-size:13px; line-height:1.6;">Enkripsi gred bank dan dilindungi lesen BNM.</p></div><div style="padding:20px; border:1px solid #3e495c; border-radius:14px;"><span style="color:#ff837b; font-size:22px;">≡</span><h3 style="margin:24px 0 8px; font-size:16px;">Tiada caj tersembunyi</h3><p style="margin:0; color:#b8c2d1; font-size:13px; line-height:1.6;">Lihat dengan jelas apa yang anda bayar sebelum bersetuju.</p></div><div style="padding:20px; border:1px solid #3e495c; border-radius:14px;"><span style="color:#ff837b; font-size:22px;">◌</span><h3 style="margin:24px 0 8px; font-size:16px;">Sokongan 24/7</h3><p style="margin:0; color:#b8c2d1; font-size:13px; line-height:1.6;">Pasukan sebenar di WhatsApp, bila-bila masa anda perlukan.</p></div></div></div></section>
+
+      <section id="mohon" class="callout" style="width:min(1080px,calc(100% - 40px)); margin:92px auto; padding:42px; display:grid; grid-template-columns:1fr auto; align-items:center; gap:30px; border-radius:22px; background:#fce5dc;"><div><p style="margin:0 0 10px; color:#ed3831; font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase;">Sedia bila anda sedia</p><h2 style="margin:0; font-size:clamp(31px,4.2vw,48px); letter-spacing:-.055em;">Sedia untuk bermula?</h2><p style="margin:14px 0 0; color:#566273;">Mohon sekarang dan dapatkan keputusan dalam beberapa minit.</p></div><a href="mailto:hello@danago.my" style="white-space:nowrap; padding:17px 23px; border-radius:14px; background:#ed3831; color:#fff; font-weight:800; text-decoration:none;">Mohon Sekarang&nbsp; →</a></section>
+
+      <section id="faq" style="width:min(860px,calc(100% - 40px)); margin:0 auto; padding:0 0 90px;"><p style="margin:0 0 12px; color:#ed3831; font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase;">Soalan</p><h2 style="margin:0 0 26px; font-size:clamp(32px,4.4vw,48px); letter-spacing:-.055em;">Soalan Lazim</h2><details style="border-top:1px solid #e7d9d0; padding:19px 0;"><summary style="cursor:pointer; font-weight:700;">Bagaimana saya tahu pinjaman saya diluluskan?</summary><p style="color:#64748b; line-height:1.6;">Kami akan memaklumkan keputusan permohonan anda melalui saluran hubungan yang didaftarkan.</p></details><details style="border-top:1px solid #e7d9d0; padding:19px 0;"><summary style="cursor:pointer; font-weight:700;">Bilakah dana akan sampai ke akaun bank saya?</summary><p style="color:#64748b; line-height:1.6;">Dana disalurkan selepas proses kelulusan, biasanya pada hari yang sama.</p></details><details style="border-top:1px solid #e7d9d0; border-bottom:1px solid #e7d9d0; padding:19px 0;"><summary style="cursor:pointer; font-weight:700;">Adakah saya layak memohon?</summary><p style="color:#64748b; line-height:1.6;">Sila hubungi pasukan DanaGo untuk menyemak syarat kelayakan semasa.</p></details></section>
     </main>
+
+    <footer style="background:#172034; color:#fff;"><div class="footer-grid" style="width:min(1160px,calc(100% - 40px)); margin:0 auto; padding:52px 0; display:grid; grid-template-columns:1.6fr repeat(3,1fr); gap:28px;"><div><div style="font-size:20px; font-weight:800;">Dana<span style="color:#ff6259;">Go</span></div><p style="max-width:220px; color:#b9c3d2; font-size:13px; line-height:1.6;">Rakan Kewangan Anda Yang Dipercayai</p><span style="color:#7ee0b4; font-size:12px;">BNM-licensed &nbsp;·&nbsp; 256-bit SSL</span></div><div><strong style="font-size:13px;">Produk</strong><p style="color:#b9c3d2; font-size:13px;">Pakej<br /><br />Cara Kerja<br /><br />Mohon Sekarang</p></div><div><strong style="font-size:13px;">Bantuan</strong><p style="color:#b9c3d2; font-size:13px;">Soalan Lazim</p></div><div><strong style="font-size:13px;">Undang-undang</strong><p style="color:#b9c3d2; font-size:13px;">Polisi Privasi<br /><br />Terma Perkhidmatan</p></div></div><div style="border-top:1px solid #334155;"><div style="width:min(1160px,calc(100% - 40px)); margin:0 auto; padding:20px 0; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; color:#94a3b8; font-size:11px;"><span>© 2026 DanaGo. Hak cipta terpelihara.</span><span>DanaGo adalah tanda dagangan berdaftar.</span></div></div></footer>
   </body>
 </html>
